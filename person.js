@@ -1,9 +1,13 @@
-var person1 = {
+var basket = require('./basket');
+
+var person = {
   name: "John Doe",
-  discountCard: false
+  discountCard: false,
+  basket: function(){
+    basket["owner"] = this.name;
+  }
 }
 
-var person2 = {
-  name: "Jane Doe",
-  discountCard: true
-}
+
+
+module.exports = person;
