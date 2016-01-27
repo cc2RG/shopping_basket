@@ -13,10 +13,11 @@ var basket = {
     for(var i = 0; i < this.basketItemValues.length; i++ ){
       total += this.basketItemValues[i];
       // this['totalValue'] = total;
+      
     }
       
-      this.totalValue = total;
-
+     this.totalValue = total;
+     return this.totalValue;
   }, 
   
   addItem: function(item){

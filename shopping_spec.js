@@ -23,6 +23,6 @@ describe('basket', function(){
   });
   it('should be able to calculate the total value of all items in the basket', function(){
     basket.addItem("fish");
-    assert.equal(9.20, basket.totalValue)
+    assert.equal(9.10, basket.totalValue())
   });
 });
