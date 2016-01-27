@@ -4,7 +4,7 @@ var person = require('./person');
 var assert = require('assert');
 
 describe('basket', function(){
-  it('Should be start empty', function(){
+  it('Should start empty', function(){
     assert.equal(0, basket.basketItems.length)
   });
   it('Should be able to be assigned an owner', function(){
@@ -21,5 +21,8 @@ describe('basket', function(){
     var value = basket.basketItemValues[0];
     assert.equal(6.50, value)
   });
-
+  it('should be able to calculate the total value of all items in the basket', function(){
+    basket.addItem("fish");
+    assert.equal(9.20, basket.totalValue)
+  });
 });

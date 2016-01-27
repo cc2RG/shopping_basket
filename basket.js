@@ -9,6 +9,14 @@ var basket = {
   basketItemValues: [],
   totalValue: function(){
     //add all values in basketItemValues 
+    var total = 0; 
+    for(var i = 0; i < this.basketItemValues.length; i++ ){
+      total += this.basketItemValues[i];
+      // this['totalValue'] = total;
+    }
+      
+      this.totalValue = total;
+
   }, 
   
   addItem: function(item){
